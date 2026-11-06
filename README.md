@@ -1,12 +1,25 @@
-# Free-UnsecuredApis-Finder
+# Free Unsecured APIs Finder
 
-Free Unsecuredapis Finder — A project by Aniket Solanki.
+A curated list of free, unsecured (no API key required) public APIs for development and testing.
 
-## Overview
+## Features
 
-This project is part of the Aniket-Solanki portfolio.
+- 🔓 **No Authentication Required** — All APIs work without API keys
+- 📚 **Categorized** — Organized by category (Weather, News, Finance, etc.)
+- 🔍 **Searchable** — Filter by category, method, or keyword
+- 📝 **Documentation Links** — Direct links to official docs
+- 🌐 **CORS Status** — Indicates if API supports browser requests
 
-## Getting Started
+## Categories
+
+- **Weather** — OpenWeatherMap, WeatherAPI, etc.
+- **News** — NewsAPI, GNews, etc.
+- **Finance** — Alpha Vantage, Finnhub, etc.
+- **Entertainment** — TMDB, OMDB, etc.
+- **Development** — GitHub, GitLab, etc.
+- **Utilities** — IP lookup, QR codes, etc.
+
+## Usage
 
 ```bash
 # Clone the repository
@@ -20,11 +33,33 @@ npm install
 npm run dev
 ```
 
-## Tech Stack
+## API Data Format
 
-- TypeScript / JavaScript
-- Node.js
-- Modern tooling
+Each API entry includes:
+
+```json
+{
+  "name": "API Name",
+  "description": "Brief description",
+  "category": "Category",
+  "baseUrl": "https://api.example.com",
+  "endpoints": [
+    {
+      "path": "/endpoint",
+      "method": "GET",
+      "description": "What this endpoint does",
+      "parameters": []
+    }
+  ],
+  "cors": true,
+  "auth": "none",
+  "documentation": "https://docs.example.com"
+}
+```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding new APIs.
 
 ## License
 
